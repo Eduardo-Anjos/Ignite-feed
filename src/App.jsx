@@ -1,16 +1,18 @@
 import { Header } from "./Components/Header/Header";
 import { Post } from "./Post";
+function App() {
+  return (
+    <div>
+      <Header />
 
-import "./global.css";
-export function App() {
-  <div>
-    <Header />
-
-    <Post
-      author="Diego Fernandes"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fuga asperiores debitis odio aperiam cupiditate nulla eveniet quo laborum quas? Nihil tempora incidunt quos velit debitis explicabo vitae ratione consectetur?"
-    />
-
-    <Post author="Gabriel Bluzzi" content="Um novo post muito legal" />
-  </div>;
+      <Post
+        author="Diego Fernandes"
+        content=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nemo eveniet fugiat
+         officia debitis alias commodi aspernatur cumque. Non esse qui voluptatum ab numquam facere. 
+         Perspiciatis ullam molestias repellendus animi!"
+      />
+    </div>
+  );
 }
+
+export default App;
