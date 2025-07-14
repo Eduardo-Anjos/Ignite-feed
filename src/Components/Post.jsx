@@ -1,13 +1,15 @@
 import styles from "./Post.module.css";
 
 import Author from "../assets/Author.svg";
+import { Comment } from "./Comment";
+import { Avatar } from "./Avatar";
 
 export function Post() {
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar} src={Author} alt="Imagem do autor" />
+          <Avatar className={styles.avatar} src={Author} alt="" />
           <div className={styles.authorInfo}>
             <strong>Diego Fernandes</strong>
             <span>Web developer</span>
@@ -47,6 +49,11 @@ export function Post() {
           <button type="submit">Puclicar</button>
         </footer>
       </form>
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
     </article>
   );
 }

@@ -1,6 +1,8 @@
 import styles from "./Sidebar.module.css";
 import sidebarImage from "../assets/sidebar-Image.svg";
 import imagemDePerfil from "../assets/imagem_de_perfil.svg";
+import Author from "../assets/Author.svg";
+import { Avatar } from "./Avatar";
 
 import { PencilLine } from "phosphor-react";
 
@@ -15,11 +17,7 @@ export function Sidebar() {
         />
 
         <div className={styles.profile}>
-          <img
-            className={styles.avatar}
-            src={imagemDePerfil}
-            alt="Imagem de perfil de usuario"
-          />
+          <Avatar src="https://github.com/maykbrito.png" />
 
           <strong>Diego Fernandes</strong>
 
