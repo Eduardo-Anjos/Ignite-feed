@@ -17,7 +17,7 @@ export function Sidebar() {
         />
 
         <div className={styles.profile}>
-          <Avatar src="https://github.com/maykbrito.png" />
+          <img src={Author} alt="imagem" />
 
           <strong>Diego Fernandes</strong>
 
