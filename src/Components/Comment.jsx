@@ -18,7 +18,7 @@ export function Comment({ content }) {
               </time>
             </div>
 
-            <button title="Deletar comentário">
+            <button onClick={handleDeleteComemment} title="Deletar comentário">
               <Trash size={24} />
             </button>
           </header>
