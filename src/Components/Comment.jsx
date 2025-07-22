@@ -20,6 +20,8 @@ export function Comment({ content }) {
 
             <button onClick={handleDeleteComemment} title="Deletar comentário">
               <Trash size={24} />
+
+              {/* aaaaaaaaa */}
             </button>
           </header>
 
